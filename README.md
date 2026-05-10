@@ -242,35 +242,6 @@ Using cURL + jq (parse JSON):
 ```bash
 curl -s https://your-vercel-app.vercel.app/numbers/iceland | jq '.sms_messages[].verification_codes[]'
 ```
-
----
-
-🌍 Supported Countries & Codes
-
-Country Key Example Number
-France france +336XXXXXXXX
-Germany germany +4915XXXXXXXX
-Iceland iceland +354XXXXXX
-Ireland ireland +35389XXXXX
-Italy italy +39XXXXXXXX
-Netherlands netherlands +316XXXXXXXX
-Poland poland +48XXXXXXXX
-Russia russia +79XXXXXXXX
-Spain spain +346XXXXXXXX
-United Kingdom united-kingdom +447XXXXXXXX
-
----
-
-⚠️ Notes
-
-· Each country maintains 1 active number at a time
-· SMS messages automatically include extracted verification codes (4-8 digits)
-· Service detection works for: Apple, Google, Amazon, Telegram, TikTok, Coinbase, Claude, NVIDIA, Samsung
-· Messages are limited to last 20 (GET) or 10 (POST refresh)
-· Numbers are temporary and may change over time
-
----
-
 <div align="center">
 
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:00BFFF,100:0047FF&height=150&section=footer" />
